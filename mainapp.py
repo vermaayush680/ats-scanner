@@ -1,5 +1,8 @@
 import io
 import docx2txt
+import nltk
+nltk.download('stopwords')
+
 from nltk.corpus import stopwords
 set(stopwords.words('english'))
 from sklearn.feature_extraction.text import CountVectorizer
