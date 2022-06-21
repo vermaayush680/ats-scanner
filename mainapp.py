@@ -2,6 +2,7 @@ import io
 import docx2txt
 import nltk
 nltk.download('stopwords')
+nltk.download('punkt')
 from nltk.corpus import stopwords
 set(stopwords.words('english'))
 from sklearn.feature_extraction.text import CountVectorizer
