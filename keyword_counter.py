@@ -11,3 +11,4 @@ def counter(clean_jd):
 
     
     data = pd.DataFrame({'KeyWords':col1,'Count In Job Description':col2})
+    return(data)
