@@ -2,7 +2,6 @@ import io
 import docx2txt
 import nltk
 nltk.download('stopwords')
-
 from nltk.corpus import stopwords
 set(stopwords.words('english'))
 from sklearn.feature_extraction.text import CountVectorizer
@@ -23,13 +22,6 @@ st.set_page_config(
      layout="wide",
  )
 
-
-
-
-
-
-
-2
 
 def home():
     st.title('ATS Scanner')
