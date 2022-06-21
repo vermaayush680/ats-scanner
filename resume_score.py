@@ -1,3 +1,5 @@
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
 def get_resume_score(text):
     cv = CountVectorizer(stop_words='english')
     count_matrix = cv.fit_transform(text)

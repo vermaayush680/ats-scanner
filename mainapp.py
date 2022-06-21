@@ -5,8 +5,6 @@ nltk.download('stopwords')
 nltk.download('punkt')
 from nltk.corpus import stopwords
 set(stopwords.words('english'))
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
 import pandas as pd
 import base64 
 import time
