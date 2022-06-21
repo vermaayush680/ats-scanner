@@ -21,8 +21,21 @@ st.set_page_config(
      layout="wide",
  )
 
-
 def home():
+
+    hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden; }
+        footer {visibility: hidden;}
+        .stApp
+        {
+            background: rgb(14, 17, 23);
+            color: rgb(250, 250, 250);
+        }
+        </style>
+        """
+    st.markdown(hide_menu_style, unsafe_allow_html=True)
+
     st.title('ATS Scanner')
 
     title_alignment="""
